@@ -1,7 +1,14 @@
 import React from "react";
+import { Container } from "@material-ui/core";
 
 function Footer() {
-  return <div>THis Is Footer</div>;
+  return (
+    <>
+      <Container maxWidth="lg">
+        <h3>THis Is Footer</h3>
+      </Container>
+    </>
+  );
 }
 
 export default Footer;
