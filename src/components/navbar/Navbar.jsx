@@ -4,9 +4,10 @@ import {
   AppBar,
   Toolbar,
   Typography,
-  Link,
   CssBaseline,
+  Link,
   Container,
+  IconButton,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import ShoppingCartOutlined from "@material-ui/icons/ShoppingCartOutlined";
@@ -44,9 +45,9 @@ const Navbar = () => {
             <Link href="/" className={classes.productBtnStyle} underline="none">
               Products
             </Link>
-            <Link href="/cart" className={classes.cartStyle}>
+            <IconButton href="/cart" className={classes.cartStyle}>
               <ShoppingCartOutlined />
-            </Link>
+            </IconButton>
           </Toolbar>
         </Container>
       </AppBar>

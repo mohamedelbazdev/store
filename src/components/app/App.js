@@ -1,4 +1,4 @@
-import { Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import ProductList from "../productList/ProductList";
 import Details from "../details/Details";
@@ -10,16 +10,18 @@ import { Container } from "@material-ui/core";
 function App() {
   return (
     <>
-      <Layout>
-        <Container maxWidth="lg">
-          <Switch>
-            <Route exact path="/" component={ProductList} />
-            <Route path="/details" component={Details} />
-            <Route path="/cart" component={Cart} />
-            <Route component={Default} />
-          </Switch>
-        </Container>
-      </Layout>
+      <Router>
+        <Layout>
+          <Container maxWidth="lg">
+            <Switch>
+              <Route exact path="/" component={ProductList} />
+              <Route path="/details" component={Details} />
+              <Route path="/cart" component={Cart} />
+              <Route component={Default} />
+            </Switch>
+          </Container>
+        </Layout>
+      </Router>
     </>
   );
 }
