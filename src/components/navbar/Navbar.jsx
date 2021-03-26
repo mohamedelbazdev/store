@@ -1,11 +1,10 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   AppBar,
   Toolbar,
   Typography,
   CssBaseline,
-  Link,
   Container,
   IconButton,
 } from "@material-ui/core";
@@ -24,6 +23,7 @@ const useStyles = makeStyles((theme) => ({
     color: "var(--white)",
     fontSize: "18px",
     fontFamily: "Roboto",
+    textDecoration: "none",
   },
   cartStyle: {
     color: "var(--white)",
@@ -42,12 +42,14 @@ const Navbar = () => {
           <Toolbar style={{ padding: 0 }}>
             <Typography variant="h4">STORE-Y</Typography>
             <div className={classes.grow} />
-            <Link href="/" className={classes.productBtnStyle} underline="none">
+            <Link to="/" className={classes.productBtnStyle} underline="none">
               Products
             </Link>
-            <IconButton href="/cart" className={classes.cartStyle}>
-              <ShoppingCartOutlined />
-            </IconButton>
+            <Link to="/cart">
+              <IconButton className={classes.cartStyle}>
+                <ShoppingCartOutlined />
+              </IconButton>
+            </Link>
           </Toolbar>
         </Container>
       </AppBar>
