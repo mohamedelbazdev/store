@@ -24,9 +24,21 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "18px",
     fontFamily: "Roboto",
     textDecoration: "none",
+    padding: "20px",
+    "&:hover": {
+      color: "#757ce8",
+      textShadow: "0 2px 20px  var(--white)",
+      background: "var(--white)",
+    },
   },
   cartStyle: {
     color: "var(--white)",
+    border: "1px solid var(--white)",
+    "&:hover": {
+      color: "#757ce8",
+
+      background: "var(--white)",
+    },
   },
 }));
 
@@ -38,7 +50,7 @@ const Navbar = () => {
       <CssBaseline />
 
       <AppBar position="static">
-        <Container maxWidth="lg">
+        <Container>
           <Toolbar style={{ padding: 0 }}>
             <Typography variant="h4">STORE-Y</Typography>
             <div className={classes.grow} />
