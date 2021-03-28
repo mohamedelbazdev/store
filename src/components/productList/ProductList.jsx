@@ -1,13 +1,17 @@
 import React, { Component } from "react";
-import Product from "../product/product";
+import { Container } from "@material-ui/core";
+import Product from "../product/Product";
+import Title from "../title/Title";
 
 class ProductList extends Component {
   render() {
     return (
-      <div style={{ padding: "100px 0" }}>
-        <h3>This Is Product List</h3>
-        <Product />
-      </div>
+      <>
+        <Title title="Our Product" />
+        <Container>
+          <Product />
+        </Container>
+      </>
     );
   }
 }

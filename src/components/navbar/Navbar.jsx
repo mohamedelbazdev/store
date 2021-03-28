@@ -51,7 +51,7 @@ const Navbar = () => {
 
       <AppBar position="static">
         <Container>
-          <Toolbar style={{ padding: 0 }}>
+          <Toolbar>
             <Typography variant="h4">STORE-Y</Typography>
             <div className={classes.grow} />
             <Link to="/" className={classes.productBtnStyle} underline="none">
