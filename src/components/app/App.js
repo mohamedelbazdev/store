@@ -5,7 +5,6 @@ import Details from "../details/Details";
 import Cart from "../cart/Cart";
 import Default from "../default/Default";
 import Layout from "../layout/Layout";
-import { Container } from "@material-ui/core";
 
 function App() {
   return (
