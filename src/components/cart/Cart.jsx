@@ -1,8 +1,13 @@
 import React, { Component } from "react";
+import Title from "../title/Title";
 
 class Cart extends Component {
   render() {
-    return <div>this is cart</div>;
+    return (
+      <>
+        <Title title="This Is Cart" />
+      </>
+    );
   }
 }
 

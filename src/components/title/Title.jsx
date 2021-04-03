@@ -3,11 +3,12 @@ import { makeStyles, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   titleStyle: {
-    padding: "10px 0",
+    padding: "20px 0",
     fontSize: "30px",
     borderBottom: "1px solid var(--light)",
     [theme.breakpoints.up("sm")]: {
       fontSize: "40px",
+      padding: "30px 0",
     },
   },
 }));
